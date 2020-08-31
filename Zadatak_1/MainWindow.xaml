@@ -4,9 +4,45 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Zadatak_1"
+        WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="500" Width="315" ResizeMode="NoResize">
+
+
+    <Grid HorizontalAlignment="Left">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Name="restartButton" FontSize="20" Content="Reset" Grid.Column="0" Grid.Row="0" Height="36" Click="onRestartButton_Click" Margin="10,8,10,7">
+        </Button>
+
+        <Button Name="A1" Grid.Column="0" Grid.Row="1" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="80" FontSize="36" Click="gameAction_Click"/>
+        <Button Name="A2" Grid.Column="1" Grid.Row="1" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="80" FontSize="36" Click="gameAction_Click"/>
+        <Button Name="A3" Grid.Column="2" Grid.Row="1" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="80" FontSize="36" Click="gameAction_Click"/>
+        <Button Name="B1" Grid.Column="0" Grid.Row="2" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="80" FontSize="36" Click="gameAction_Click"/>
+        <Button Name="B2" Grid.Column="1" Grid.Row="2" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="80" FontSize="36" Click="gameAction_Click"/>
+        <Button Name="B3" Grid.Column="2" Grid.Row="2" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="80" FontSize="36" Click="gameAction_Click"/>
+        <Button Name="C1" Grid.Column="0" Grid.Row="3" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="80" FontSize="36" Click="gameAction_Click"/>
+        <Button Name="C2" Grid.Column="1" Grid.Row="3" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="80" FontSize="36" Click="gameAction_Click"/>
+        <Button Name="C3" Grid.Column="2" Grid.Row="3" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="80" FontSize="36" Click="gameAction_Click"/>
+
+        <Label Grid.Column="0" Grid.Row="4" Content="Wins X" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+        <Label Grid.Column="1" Grid.Row="4" Content="Wins O" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+        <Label Grid.Column="2" Grid.Row="4" Content="Ties" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24"/>
+
+        <Label Name="winsX" Grid.Column="0" Grid.Row="5" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <Label Name="winsO" Grid.Column="1" Grid.Row="5" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <Label Name="ties" Grid.Column="2" Grid.Row="5" Content="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
     </Grid>
 </Window>

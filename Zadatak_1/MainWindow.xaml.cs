@@ -20,9 +20,42 @@ namespace Zadatak_1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private List<Button> gameButtons;
+
+        public static bool TURN = true;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            gameButtons = new List<Button>();
+
+            gameButtons.Add(A1);
+            gameButtons.Add(A2);
+            gameButtons.Add(A3);
+
+            gameButtons.Add(B1);
+            gameButtons.Add(B2);
+            gameButtons.Add(B3);
+
+            gameButtons.Add(C1);
+            gameButtons.Add(C2);
+            gameButtons.Add(C3);
+        }
+
+        private void onRestartButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void aboutButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void gameAction_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
